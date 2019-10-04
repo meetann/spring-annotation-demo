@@ -2,12 +2,17 @@ package com.stackroute.domain;
 
 import org.springframework.stereotype.Component;
 
-@Component
 public class Actor {
 
     private  String name;
     private  String gender;
     private  int age;
+
+    public Actor(String name, String gender, int age) {
+        this.name = name;
+        this.gender = gender;
+        this.age = age;
+    }
 
     public void setName(String name) {
         this.name = name;
@@ -23,8 +28,8 @@ public class Actor {
 
     public void displayDetails(){
         System.out.println("Okay..");
-//        System.out.println("Actor name is "+name);
-//        System.out.println("Actor gender is "+gender);
-//        System.out.println("Actor age is "+age);
+        System.out.println("Actor name is "+name);
+        System.out.println("Actor gender is "+gender);
+        System.out.println("Actor age is "+age);
     }
 }
